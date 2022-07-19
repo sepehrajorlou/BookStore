@@ -182,7 +182,9 @@ body {
 		margin-top: 8px;
 	}
 	#signIn  {
-		display: block!important;
+		display: block !important;
+		position: relative;
+		top:9px
 	}
 	#sinInIcon {
 		display: none !important;
@@ -190,6 +192,9 @@ body {
 	#home {
 		position: absolute;
 		top: 50px;
+	}
+	#responsive-book-margin-page {
+		margin-top: 340px;
 	}
 	/* ------------------------------- */
 

@@ -1,16 +1,24 @@
 
 <template>
   <div id="sticky-header">
-     <Slide id="home">
-      <router-link to="/choose-Bookstore" class="text-dark">choose a bookstore</router-link>
+    <Slide id="home">
+      <router-link to="/choose-Bookstore" class="text-dark"
+        >choose a bookstore</router-link
+      >
       <router-link to="/Gift-Cards" class="text-dark">Gift Cards</router-link>
-      <router-link to="/Best-Sellers" class="text-dark">Best Sellers</router-link>
-      <router-link to="/New-Releases" class="text-dark">New Releases</router-link>
+      <router-link to="/Best-Sellers" class="text-dark"
+        >Best Sellers</router-link
+      >
+      <router-link to="/New-Releases" class="text-dark"
+        >New Releases</router-link
+      >
       <router-link to="/Fiction" class="text-dark">Fiction</router-link>
       <router-link to="/NonFiction" class="text-dark">NonFiction</router-link>
       <router-link to="/YA" class="text-dark">YA</router-link>
       <router-link to="/Kids" class="text-dark">Kids</router-link>
-      <router-link to="/Games-Puzzles" class="text-dark">Games & Puzzles</router-link>
+      <router-link to="/Games-Puzzles" class="text-dark"
+        >Games & Puzzles</router-link
+      >
     </Slide>
     <div class="container bg-light-orange text-center" style="height: 50px">
       <span class="text-dark" id="header-text ">
@@ -19,7 +27,7 @@
       </span>
     </div>
     <section>
-      <div class="d-flex align-item-center " id="header-responsive">
+      <div class="d-flex align-item-center" id="header-responsive">
         <div class="">
           <img
             :src="require('@/assets/images/wallpaper.svg')"
@@ -37,12 +45,7 @@
                 placeholder="seatch books,authors,ISBNs..."
               />
               <button type="submit" class="searchButton">
-                <iconly
-                  name="search"
-                  type="outline"
-                  size="25"
-                  style="color: black"
-                />
+                <unicon name="search" fill="black" />
               </button>
             </div>
           </div>
@@ -51,16 +54,16 @@
         <div class="d-flex align-item-center" id="sign-and-shop">
           <div style="margin: 0 25px">
             <h2 class="special-blue" id="signIn">sign in</h2>
-            <iconly
-              name="profile"
-              type="outline"
-              size="40"
-              class=""
+            <unicon
+              name="user"
+              fill="user"
+              width="42"
+              height="42"
               id="sinInIcon"
             />
           </div>
           <div>
-            <iconly name="bag" type="outline" size="40" class="" />
+            <unicon name="shopping-bag" fill="black" width="42" height="42" />
           </div>
         </div>
       </div>
@@ -139,15 +142,14 @@
   position: relative;
   top: 55px;
   right: 35px;
-
-} 
+}
 </style>
 <script>
-import { Slide } from 'vue-burger-menu'
+import { Slide } from "vue-burger-menu";
 export default {
-    components: {
-        Slide // Register your component
-    },
+  components: {
+    Slide, // Register your component
+  },
   data() {
     return {};
   },

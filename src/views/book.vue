@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div  id="responsive-book-margin-page">
     <div class="container-sm d-flex" id="main-book-container">
       <div class="" id="book-image-responsive">
         <img
