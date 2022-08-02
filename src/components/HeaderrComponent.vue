@@ -76,6 +76,17 @@
     </section>
   </div>
 </template>
+<script>
+import { Slide } from "vue-burger-menu";
+export default {
+  components: {
+    Slide, // Register your component
+  },
+  data() {
+    return {};
+  },
+};
+</script>
 <style scoped>
 #sticky-header {
   background-color: #fff;
@@ -144,14 +155,3 @@
   right: 35px;
 }
 </style>
-<script>
-import { Slide } from "vue-burger-menu";
-export default {
-  components: {
-    Slide, // Register your component
-  },
-  data() {
-    return {};
-  },
-};
-</script>
