@@ -10,6 +10,11 @@ module.exports = defineConfig({
         .loader("@intlify/vue-i18n-loader")
         .end();
   } , 
+  // configureWebpack: {
+  //   plugins: [
+  //     new MyAwesomeWebpackPlugin()
+  //   ]
+  // }
   
   
 })
