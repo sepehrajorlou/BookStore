@@ -6,28 +6,40 @@ const MainPAGE = () => import("@/views/main.vue");
 const BookSPA = () => import("@/views/book.vue");
 const NotFind = () => import("@/components/NotFind.vue")
 const router = new VueRouter({
-	mode:"history",
+	mode: "history",
 	routes: [
 		{
-			path:"/" , 
-			component:MainComponent ,
-			redirect: "/main" ,
+			path: "/",
+			component: MainComponent,
+			redirect: "/main",
 			children: [
 				{
-					path:"/main" , 
-					component:MainPAGE
+					path: "/main",
+					component: MainPAGE,
+					meta: { title: "main" }
 				},
 				{
-					path:"/book/name-:id" ,
-					component:BookSPA
+					path: "/book/name-:id",
+					component: BookSPA, 
+					meta:{title:"book"}
 				}
 			]
-			
+
 		},
 		{
-			path:"/*",
-			component:NotFind
+			path: "/*",
+			component: NotFind,
+			meta:{
+				title:"404"
+			}
 		}
-	]
-  })
-  export default router;
+	],
+
+})
+const DEFAULT_TITLE = 'Bookstore';
+router.afterEach((to) => {
+	Vue.nextTick(() => {
+		document.title = to.meta.title || DEFAULT_TITLE;
+	});
+});
+export default router;

@@ -91,7 +91,12 @@ export default {
   },
   methods: {
     Search() {
-      this.$router.push(this.input);
+      if ("/" + this.input != this.$route.path) {
+        this.$router.push(this.input);
+        this.input = "";
+      } else {
+        return (this.input = "");
+      }
     },
   },
 };

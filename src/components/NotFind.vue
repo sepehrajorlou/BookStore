@@ -13,8 +13,14 @@
         <div class="mx-auto" id="Inputwidth-notfind">
           <div class="wrap">
             <div class="search">
-              <input type="text" class="searchTerm" placeholder="Search" />
-              <button type="submit" class="searchButton">
+              <input
+                type="text"
+                class="searchTerm"
+                placeholder="Search"
+                v-model="input"
+                @keyup.enter="Search()"
+              />
+              <button type="submit" class="searchButton" @click="Search()">
                 <unicon name="search" fill="white" id="Searchicon" />
               </button>
             </div>
@@ -25,7 +31,23 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      input: "",
+    };
+  },
+  methods: {
+    Search() {
+      if ("/" + this.input != this.$route.path) {
+        this.$router.push(this.input);
+        this.input = "";
+      } else {
+        return (this.input = "");
+      }
+    },
+  },
+};
 </script>
 <style Scoped>
 #margin-top {
