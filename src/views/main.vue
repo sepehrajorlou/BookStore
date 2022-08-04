@@ -1,6 +1,5 @@
 <template>
   <div style="" id="container-top">
-    <button v-on:click="test2()">CLICK</button>
     <carousel
       autoplay
       :per-page="1"
@@ -285,7 +284,7 @@ export default {
 
   methods: {
     test2() {
-      console.log(this.PhotoesData[210].url)
+      console.log(this.PhotoesData[210].url);
     },
   },
   beforeMount() {

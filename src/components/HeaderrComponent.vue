@@ -43,8 +43,10 @@
                 type="text"
                 class="searchTerm light-purple"
                 placeholder="seatch books,authors,ISBNs..."
+                @keyup.enter="Search()"
+                v-model="input"
               />
-              <button type="submit" class="searchButton">
+              <button type="submit" class="searchButton" @click="Search()">
                 <unicon name="search" fill="black" />
               </button>
             </div>
@@ -83,7 +85,14 @@ export default {
     Slide, // Register your component
   },
   data() {
-    return {};
+    return {
+      input: "",
+    };
+  },
+  methods: {
+    Search() {
+      this.$router.push(this.input);
+    },
   },
 };
 </script>

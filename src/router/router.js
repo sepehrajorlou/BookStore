@@ -20,13 +20,13 @@ const router = new VueRouter({
 				{
 					path:"/book/name-:id" ,
 					component:BookSPA
-				},
-				{
-					path:"/*",
-					component:NotFind
 				}
 			]
 			
+		},
+		{
+			path:"/*",
+			component:NotFind
 		}
 	]
   })
