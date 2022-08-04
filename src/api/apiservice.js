@@ -12,6 +12,10 @@ const Data = {
 	photo(){
 		const url =  "https://jsonplaceholder.typicode.com";
 		return Vue.axios.get(`${url}/photos`);
+	},
+	booktext(){
+		const url = "https://baconipsum.com/api/?type=meat" ;
+		return Vue.axios.get(url);
 	}
 }
 export default Data;
