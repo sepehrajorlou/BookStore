@@ -42,11 +42,19 @@ body {
 .justify-content-center {
 	justify-content: center;
 }
+.justify-content-between {
+	justify-content: space-between;
+}
 
 .text-center {
 	text-align: center;
 }
-
+.w-100 {
+	width: 100%;
+}
+.float-right {
+	float: right !important;
+}
 /* space */
 .mt-1 {
 	margin-top: 5px;
@@ -100,7 +108,18 @@ body {
 .mr-2 {
 	margin-right: 10px;
 }
-
+.mr-3 {
+	margin-right: 15px;
+}
+.ml-1{
+	margin-left: 5px;
+}
+.ml-2{
+	margin-left: 10px;
+}
+.ml-3{
+	margin-left: 15px;
+}
 .py-1 {
 	padding: 5px 0px;
 }
