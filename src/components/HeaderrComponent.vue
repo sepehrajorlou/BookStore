@@ -65,7 +65,9 @@
             />
           </div>
           <div>
-            <unicon name="shopping-bag" fill="black" width="42" height="42" />
+            <router-link to="/cart">
+              <unicon name="shopping-bag" fill="black" width="42" height="42" />
+            </router-link>
           </div>
         </div>
       </div>

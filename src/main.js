@@ -11,8 +11,8 @@ Vue.use(VueCarousel);
 // ///////////////////////////////////////
 
 import Unicon from 'vue-unicons/dist/vue-unicons-vue2.umd'
-import { uniFacebook, uniTwitter, uniInstagram  , uniShoppingBag , uniBookmarkFull , uniDollarAlt , uniSearch , uniUser} from 'vue-unicons/dist/icons'
-Unicon.add([uniFacebook, uniTwitter, uniInstagram , uniShoppingBag , uniBookmarkFull , uniDollarAlt , uniSearch , uniUser])
+import { uniFacebook, uniTwitter, uniInstagram  , uniShoppingBag , uniBookmarkFull , uniDollarAlt , uniSearch , uniUser , uniCheck} from 'vue-unicons/dist/icons'
+Unicon.add([uniFacebook, uniTwitter, uniInstagram , uniShoppingBag , uniBookmarkFull , uniDollarAlt , uniSearch , uniUser , uniCheck])
 Vue.use(Unicon)
 // ///////////////////////////////////////
 import store from './store/store'

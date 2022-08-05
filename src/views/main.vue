@@ -264,7 +264,7 @@
   </div>
 </template>
 <script>
-import ApiService from "@/api/apiservice";
+// import ApiService from "@/api/apiservice";
 export default {
   data() {
     return {
@@ -282,16 +282,11 @@ export default {
     };
   },
 
-  methods: {
-    test2() {
-      console.log(this.PhotoesData[210].url);
-    },
-  },
-  beforeMount() {
-    ApiService.photo().then((response) => {
-      this.PhotoesData = response.data;
-    });
-  },
+  // beforeMount() {
+  //   ApiService.photo().then((response) => {
+  //     this.PhotoesData = response.data;
+  //   });
+  // },
 };
 </script>
 <style Scoped>
