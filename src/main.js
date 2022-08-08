@@ -13,12 +13,16 @@ Vue.use(VueCarousel);
 import Unicon from 'vue-unicons/dist/vue-unicons-vue2.umd'
 import { uniFacebook, uniTwitter, uniInstagram  , uniShoppingBag , uniBookmarkFull , uniDollarAlt , uniSearch , uniUser , uniCheck} from 'vue-unicons/dist/icons'
 Unicon.add([uniFacebook, uniTwitter, uniInstagram , uniShoppingBag , uniBookmarkFull , uniDollarAlt , uniSearch , uniUser , uniCheck])
-Vue.use(Unicon)
+Vue.use(Unicon);
 // ///////////////////////////////////////
 import store from './store/store'
 // ///////////////////////////////////////
-
-
+import { LMap, LTileLayer, LMarker } from 'vue2-leaflet';
+import 'leaflet/dist/leaflet.css';
+Vue.component('l-map', LMap);
+Vue.component('l-tile-layer', LTileLayer);
+Vue.component('l-marker', LMarker);
+import 'leaflet/dist/leaflet.css';
 // ///////////////////////////////////////
 
 Vue.config.productionTip = false

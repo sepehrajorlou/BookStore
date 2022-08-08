@@ -109,7 +109,7 @@ export default {
   transition: 0.2s;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 999 !important;
   top: 0;
 }
 #header-text {

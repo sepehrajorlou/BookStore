@@ -2,7 +2,7 @@
   <div>
     <div class="container" id="responsive-locator-margin-page">
       <div id="grid-container-locator" class="d-flex">
-        <div style="width: 40%">
+        <div style="width: 40%;max-height:500px" class="w-sm-100 overflow-scroll-y">
           <div
             class="border d-block"
             v-for="x in 10"
@@ -22,19 +22,33 @@
             </div>
           </div>
         </div>
-        <div class="border shadow py-2" style="width: 60%">
-
-		</div>
+        <div class="border shadow py-2 w-sm-100" style="width: 60%" >
+          <l-map style="height: 500px" :zoom="zoom" :center="center">
+            <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
+            <l-marker :lat-lng="markerLatLng"></l-marker>
+          </l-map>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+      attribution:
+        '&copy; <a target="_blank" href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+      zoom: 15,
+      center: [51.505, -0.159],
+      markerLatLng: [51.504, -0.159],
+    };
+  },
+};
 </script>
 <style scoped>
 #responsive-locator-margin-page {
-  margin-top: 13rem;
+  margin-top: 15rem;
 }
 
 #pre-order-btn {

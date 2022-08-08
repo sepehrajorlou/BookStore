@@ -279,6 +279,9 @@ body {
 .overflow-scroll-x {
 	overflow-x: scroll !important;
 }
+.overflow-scroll-y {
+	overflow-y: scroll !important;
+}
 
 .line-through {
 	-webkit-text-decoration-line: line-through;
@@ -401,7 +404,10 @@ body {
 	/* ------------------------------- */
 	/* locator */
 	#grid-container-locator {
-		flex-direction: column;
+		flex-direction: column-reverse;
+	}
+	.w-sm-100{
+		width: 100% !important;
 	}
 
 	/* ------------------------------- */
