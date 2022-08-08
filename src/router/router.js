@@ -6,6 +6,7 @@ const MainPAGE = () => import("@/views/main.vue");
 const BookSPA = () => import("@/views/book.vue");
 const cart = () => import("@/views/cart.vue")
 const NotFind = () => import("@/components/NotFind.vue");
+const Locator = () => import("@/views/storeLocator.vue");
 const router = new VueRouter({
 	mode: "history",
 	routes: [
@@ -21,13 +22,18 @@ const router = new VueRouter({
 				},
 				{
 					path: "/book/name-:id",
-					component: BookSPA, 
-					meta:{title:"book"}
+					component: BookSPA,
+					meta: { title: "book" }
 				},
 				{
-					path:"/cart" ,
-					component:cart,
-					meta:{title:"cart"}
+					path: "/cart",
+					component: cart,
+					meta: { title: "cart" }
+				},
+				{
+					path: "/store-locator",
+					component: Locator,
+					meta: { title: "store location" }
 				}
 			]
 
@@ -35,8 +41,8 @@ const router = new VueRouter({
 		{
 			path: "/*",
 			component: NotFind,
-			meta:{
-				title:"404"
+			meta: {
+				title: "404"
 			}
 		}
 	],

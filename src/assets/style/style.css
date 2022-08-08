@@ -23,10 +23,10 @@ body {
 	flex-direction: row;
 }
 
-.d-grid {
-	display: grid;
-}
 
+.d-block {
+	display: block;
+}
 .d-inline-block {
 	display: inline-block;
 }
@@ -34,6 +34,7 @@ body {
 .flex-column {
 	flex-direction: column;
 }
+
 .flex-column-reverse {
 	flex-direction: column-reverse;
 }
@@ -45,9 +46,11 @@ body {
 .justify-content-center {
 	justify-content: center;
 }
+
 .justify-content-between {
 	justify-content: space-between;
 }
+
 .justify-content-end {
 	justify-content: flex-end;
 }
@@ -55,15 +58,19 @@ body {
 .text-center {
 	text-align: center;
 }
+
 .w-100 {
 	width: 100%;
 }
+
 .h-100 {
 	height: 100%;
 }
+
 .float-right {
 	float: right !important;
 }
+
 /* space */
 .mt-1 {
 	margin-top: 5px;
@@ -76,21 +83,27 @@ body {
 .mt-3 {
 	margin-top: 15px;
 }
+
 .mt-4 {
 	margin-top: 20px;
 }
+
 .mt-5 {
 	margin-top: 25px;
 }
+
 .mb-1 {
 	margin-bottom: 5px;
 }
+
 .mb-2 {
 	margin-bottom: 10px;
 }
+
 .mb-3 {
 	margin-bottom: 15px;
 }
+
 .mx-1 {
 	margin-left: 5px;
 	margin-right: 5px;
@@ -131,18 +144,23 @@ body {
 .mr-2 {
 	margin-right: 10px;
 }
+
 .mr-3 {
 	margin-right: 15px;
 }
-.ml-1{
+
+.ml-1 {
 	margin-left: 5px;
 }
-.ml-2{
+
+.ml-2 {
 	margin-left: 10px;
 }
-.ml-3{
+
+.ml-3 {
 	margin-left: 15px;
 }
+
 .py-1 {
 	padding: 5px 0px;
 }
@@ -218,6 +236,7 @@ body {
 .text-danger {
 	color: #DF2454;
 }
+
 .text-special-gray {
 	color: #908080;
 }
@@ -237,7 +256,9 @@ body {
 .bg-notfind-gray {
 	background-color: #EAE9ED;
 }
-
+.bg-km-gray {
+	background-color: #EEEEEE;
+}
 /* +  ... */
 .fw-bold {
 	font-weight: 900 !important;
@@ -275,6 +296,9 @@ body {
 
 .radius-25 {
 	border-radius: 25px;
+}
+.shadow {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 /* responsive section */
@@ -365,12 +389,21 @@ body {
 	#main-container {
 		flex-direction: column-reverse;
 	}
+
 	#price-number-of-production {
 		justify-content: flex-end;
 	}
+
 	#item-text {
 		visibility: hidden;
 	}
+
+	/* ------------------------------- */
+	/* locator */
+	#grid-container-locator {
+		flex-direction: column;
+	}
+
 	/* ------------------------------- */
 }
 
