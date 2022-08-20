@@ -409,6 +409,9 @@ body {
 	.w-sm-100{
 		width: 100% !important;
 	}
+	#responsive-locator-margin-page {
+		margin-top: 22rem !important;
+	}
 
 	/* ------------------------------- */
 }
